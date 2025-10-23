@@ -2,7 +2,7 @@
 
 **Models (two families):**
 - Family A: GPT (ChatGPT)
-- Family B: Claude OR Gemini
+- Family B: Claude
 
 **Structure**
 - `prompts/` — exact prompts used (markdown files)
@@ -11,4 +11,4 @@
 - `eval/` — simple evaluation scripts (runs tests, computes pass@k=1)
 - `results/` — CSV logs of runs
 
-**Pass@k policy**: Using pass@1 (single attempt) for baseline; we’ll extend later if time allows.
+**Pass@k policy**: Using pass@1 (single attempt) for baseline
