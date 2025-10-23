@@ -2,7 +2,7 @@
 
 **Models (two families):**
 - Family A: GPT (ChatGPT)
-- Family B: ______ (Claude OR Gemini)  ← fill this once chosen
+- Family B: Claude OR Gemini
 
 **Structure**
 - `prompts/` — exact prompts used (markdown files)
