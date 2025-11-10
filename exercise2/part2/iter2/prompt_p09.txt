@@ -1,0 +1,14 @@
+Goal: Strengthen tests for eval/p09_candidate.py (roman_to_int) to expose subtractive logic bugs.
+Coverage won’t change (no branches), but we want stronger functional checks.
+
+Write pytest tests that:
+1) Include composite subtractive numerals: "MCMXCIV"=1994, "XLII"=42, "XCIX"=99, "CDXLIV"=444.
+2) Add a table of mixed cases (e.g., "LVIII"=58).
+3) Include one invalid-input behavior test. If the spec is undefined, assert that a KeyError (or similar) is raised for characters like "A" or "Z".
+
+Constraints:
+- Tests only; deterministic; descriptive names.
+- Import: from eval.p09_candidate import roman_to_int
+- Avoid duplicating existing Iteration-1 tests (basic symbols, repetitions, and the 6 subtractive pairs).
+
+Return only pytest code.

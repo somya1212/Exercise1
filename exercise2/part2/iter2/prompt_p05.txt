@@ -1,0 +1,19 @@
+Goal: Add robustness tests for eval/p05_candidate.py (two_sum) without changing code.
+Reason: Coverage is already 100% line/branch; we now add meaningful variants to confirm behavior.
+
+Write pytest tests that:
+- Re-check the no-solution case with different patterns (e.g., all negatives, large numbers).
+- Check multiple valid pairs exist → function should return the first valid pair by index order.
+- Check repeated numbers where complement equals current (e.g., [0,0,1]).
+- Check performance-friendly small cases (empty list, single element) if behavior is defined; otherwise assert (-1,-1).
+
+Constraints:
+- Tests only; deterministic; descriptive names.
+- Import: from eval.p05_candidate import two_sum
+- Avoid duplicates with existing tests:
+  - test_no_solution_returns_minus_one_tuple
+  - test_pair_found_with_duplicates_earliest_indices
+  - test_pair_with_negative_and_positive_numbers
+  - test_pair_with_zeros
+
+Return only pytest code.
