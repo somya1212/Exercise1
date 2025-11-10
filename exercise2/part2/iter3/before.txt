@@ -1,0 +1,2 @@
+P05 — Line: 100%, Branch: 100%   (no uncovered lines/branches)
+P09 — Line: 100%, Branch: 100%   (logic still wrong for subtractive numerals; tests deliberately fail)

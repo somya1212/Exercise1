@@ -1,0 +1,3 @@
+P05 — Line: 100%, Branch: 100%
+P09 — Line: 100%, Branch: 100%  (logic still intentionally failing on subtractive cases)
+Project total — Line: 41% (infra scripts still uncovered)
