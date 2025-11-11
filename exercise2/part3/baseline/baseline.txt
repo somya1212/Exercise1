@@ -1,0 +1,266 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0
+rootdir: /Users/somya/Desktop/Exercise1/exercise2
+configfile: pytest.ini
+plugins: cov-7.0.0
+collected 56 items / 22 deselected / 34 selected
+
+exercise2/part2/tests_added/test_p05_llm_iter1.py ....                   [ 11%]
+exercise2/part2/tests_added/test_p05_llm_iter2.py .....                  [ 26%]
+exercise2/part2/tests_added/test_p09_llm_iter1.py .........FFFFFF        [ 70%]
+exercise2/part2/tests_added/test_p09_llm_iter2.py FFF.F.                 [ 88%]
+exercise2/tests/test_p05.py ...                                          [ 97%]
+exercise2/tests/test_p09.py F                                            [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_subtractive_pairs[IV-4] _________________________
+
+s = 'IV', expected = 4
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("IV", 4),
+            ("IX", 9),
+            ("XL", 40),
+            ("XC", 90),
+            ("CD", 400),
+            ("CM", 900),
+        ],
+    )
+    def test_subtractive_pairs(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 6 == 4
+E        +  where 6 = roman_to_int('IV')
+
+exercise2/part2/tests_added/test_p09_llm_iter1.py:33: AssertionError
+_________________________ test_subtractive_pairs[IX-9] _________________________
+
+s = 'IX', expected = 9
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("IV", 4),
+            ("IX", 9),
+            ("XL", 40),
+            ("XC", 90),
+            ("CD", 400),
+            ("CM", 900),
+        ],
+    )
+    def test_subtractive_pairs(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 11 == 9
+E        +  where 11 = roman_to_int('IX')
+
+exercise2/part2/tests_added/test_p09_llm_iter1.py:33: AssertionError
+________________________ test_subtractive_pairs[XL-40] _________________________
+
+s = 'XL', expected = 40
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("IV", 4),
+            ("IX", 9),
+            ("XL", 40),
+            ("XC", 90),
+            ("CD", 400),
+            ("CM", 900),
+        ],
+    )
+    def test_subtractive_pairs(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 60 == 40
+E        +  where 60 = roman_to_int('XL')
+
+exercise2/part2/tests_added/test_p09_llm_iter1.py:33: AssertionError
+________________________ test_subtractive_pairs[XC-90] _________________________
+
+s = 'XC', expected = 90
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("IV", 4),
+            ("IX", 9),
+            ("XL", 40),
+            ("XC", 90),
+            ("CD", 400),
+            ("CM", 900),
+        ],
+    )
+    def test_subtractive_pairs(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 110 == 90
+E        +  where 110 = roman_to_int('XC')
+
+exercise2/part2/tests_added/test_p09_llm_iter1.py:33: AssertionError
+________________________ test_subtractive_pairs[CD-400] ________________________
+
+s = 'CD', expected = 400
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("IV", 4),
+            ("IX", 9),
+            ("XL", 40),
+            ("XC", 90),
+            ("CD", 400),
+            ("CM", 900),
+        ],
+    )
+    def test_subtractive_pairs(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 600 == 400
+E        +  where 600 = roman_to_int('CD')
+
+exercise2/part2/tests_added/test_p09_llm_iter1.py:33: AssertionError
+________________________ test_subtractive_pairs[CM-900] ________________________
+
+s = 'CM', expected = 900
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("IV", 4),
+            ("IX", 9),
+            ("XL", 40),
+            ("XC", 90),
+            ("CD", 400),
+            ("CM", 900),
+        ],
+    )
+    def test_subtractive_pairs(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 1100 == 900
+E        +  where 1100 = roman_to_int('CM')
+
+exercise2/part2/tests_added/test_p09_llm_iter1.py:33: AssertionError
+_____________ test_composite_subtractive_and_mixed_cases[XLII-42] ______________
+
+s = 'XLII', expected = 42
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("XLII", 42),     # 40 + 2
+            ("XCIX", 99),     # 90 + 9
+            ("CDXLIV", 444),  # 400 + 40 + 4
+            ("LVIII", 58),    # 50 + 5 + 3
+            ("MCMXCIV", 1994) # 1000 + 900 + 90 + 4
+        ],
+    )
+    def test_composite_subtractive_and_mixed_cases(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 62 == 42
+E        +  where 62 = roman_to_int('XLII')
+
+exercise2/part2/tests_added/test_p09_llm_iter2.py:15: AssertionError
+_____________ test_composite_subtractive_and_mixed_cases[XCIX-99] ______________
+
+s = 'XCIX', expected = 99
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("XLII", 42),     # 40 + 2
+            ("XCIX", 99),     # 90 + 9
+            ("CDXLIV", 444),  # 400 + 40 + 4
+            ("LVIII", 58),    # 50 + 5 + 3
+            ("MCMXCIV", 1994) # 1000 + 900 + 90 + 4
+        ],
+    )
+    def test_composite_subtractive_and_mixed_cases(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 121 == 99
+E        +  where 121 = roman_to_int('XCIX')
+
+exercise2/part2/tests_added/test_p09_llm_iter2.py:15: AssertionError
+____________ test_composite_subtractive_and_mixed_cases[CDXLIV-444] ____________
+
+s = 'CDXLIV', expected = 444
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("XLII", 42),     # 40 + 2
+            ("XCIX", 99),     # 90 + 9
+            ("CDXLIV", 444),  # 400 + 40 + 4
+            ("LVIII", 58),    # 50 + 5 + 3
+            ("MCMXCIV", 1994) # 1000 + 900 + 90 + 4
+        ],
+    )
+    def test_composite_subtractive_and_mixed_cases(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 666 == 444
+E        +  where 666 = roman_to_int('CDXLIV')
+
+exercise2/part2/tests_added/test_p09_llm_iter2.py:15: AssertionError
+___________ test_composite_subtractive_and_mixed_cases[MCMXCIV-1994] ___________
+
+s = 'MCMXCIV', expected = 1994
+
+    @pytest.mark.parametrize(
+        "s, expected",
+        [
+            ("XLII", 42),     # 40 + 2
+            ("XCIX", 99),     # 90 + 9
+            ("CDXLIV", 444),  # 400 + 40 + 4
+            ("LVIII", 58),    # 50 + 5 + 3
+            ("MCMXCIV", 1994) # 1000 + 900 + 90 + 4
+        ],
+    )
+    def test_composite_subtractive_and_mixed_cases(s, expected):
+>       assert roman_to_int(s) == expected
+E       AssertionError: assert 2216 == 1994
+E        +  where 2216 = roman_to_int('MCMXCIV')
+
+exercise2/part2/tests_added/test_p09_llm_iter2.py:15: AssertionError
+________________________________ test_examples _________________________________
+
+    def test_examples():
+        assert roman_to_int("III") == 3
+>       assert roman_to_int("IV") == 4
+E       AssertionError: assert 6 == 4
+E        +  where 6 = roman_to_int('IV')
+
+tests/test_p09.py:7: AssertionError
+================================ tests coverage ================================
+_______________ coverage: platform darwin, python 3.9.6-final-0 ________________
+
+Name                        Stmts   Miss Branch BrPart  Cover   Missing
+-----------------------------------------------------------------------
+eval/__init__.py                0      0      0      0   100%
+eval/p01_candidate.py           2      1      0      0    50%   2
+eval/p02_candidate.py           3      2      0      0    33%   2-3
+eval/p03_candidate.py           9      8      6      0     7%   2-9
+eval/p04_candidate.py           7      6      4      0     9%   2-7
+eval/p05_candidate.py           8      0      4      0   100%
+eval/p06_candidate.py           4      3      0      0    25%   2-4
+eval/p07_candidate.py           2      1      0      0    50%   2
+eval/p08_candidate.py           4      3      2      0    17%   2-4
+eval/p09_candidate.py           6      0      2      0   100%
+eval/p10_candidate.py          10      9      8      0     6%   3-11
+eval/run_eval.py               42     42      8      0     0%   2-59
+eval/snapshot_and_run.py       41     41     10      0     0%   2-56
+eval/summarise_results.py      17     17      0      0     0%   1-47
+-----------------------------------------------------------------------
+TOTAL                         155    133     44      0    14%
+Coverage HTML written to dir exercise2/part3/baseline/htmlcov
+Coverage XML written to file exercise2/part3/baseline/coverage.xml
+=========================== short test summary info ============================
+FAILED exercise2/part2/tests_added/test_p09_llm_iter1.py::test_subtractive_pairs[IV-4]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter1.py::test_subtractive_pairs[IX-9]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter1.py::test_subtractive_pairs[XL-40]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter1.py::test_subtractive_pairs[XC-90]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter1.py::test_subtractive_pairs[CD-400]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter1.py::test_subtractive_pairs[CM-900]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter2.py::test_composite_subtractive_and_mixed_cases[XLII-42]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter2.py::test_composite_subtractive_and_mixed_cases[XCIX-99]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter2.py::test_composite_subtractive_and_mixed_cases[CDXLIV-444]
+FAILED exercise2/part2/tests_added/test_p09_llm_iter2.py::test_composite_subtractive_and_mixed_cases[MCMXCIV-1994]
+FAILED exercise2/tests/test_p09.py::test_examples - AssertionError: assert 6 ...
+================= 11 failed, 23 passed, 22 deselected in 0.24s =================
